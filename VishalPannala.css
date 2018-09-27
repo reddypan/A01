@@ -1,0 +1,64 @@
+
+#first-web-page {
+    width: 960px;
+    margin: 25px auto;
+}
+
+#past-section {
+    background-color: #66FCF1;
+    float: left;
+    width: 650px;
+    border-style: ridge;
+}
+
+#future-section {
+    background-color: #EAE7DC;
+    float: left;
+    width: 650px;
+    border-style: ridge;
+}
+
+.aside-header {
+    width: 295px;
+    background-color: #EAE7DC;
+    float: right;
+    height: 510px;
+    border-style: ridge;
+}
+
+header {
+    background-color: #1f2833;
+    text-align: center;
+    height: 60px;
+    padding: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+footer{
+    clear: both;
+    background-color: #0b0c10 ;
+    border-style: ridge;
+    text-align: center;
+    color: white;
+}
+
+.section-header{
+    font-size: 17px;
+    color: brown;
+    text-align: center;
+    text-decoration: underline;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.classes-schedule{
+    background-color: #66FCF1;
+    border-style: ridge;
+    float: left;
+    width: 650px;
+}
