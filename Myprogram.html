@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vishal Pannala</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="VishalPannala.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">About me</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="Myprogram.html">Dummy</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <article>
+        <header> Speeding Ticket - Fine in USD</header>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-8">
+                    <section id="form-input1">
+                    <p>If you want to drive a little too fast, and if a police officer stops you, Don't worry. 
+                     If speed is 60 or less, the fine will be $100. If speed is between 61 and 80 inclusive, the fine will be $150. If speed is 81 or more, the fine will be $200. Unless it is your birthday -- on that day, your speed can go at any any speed.</p>
+                    <form id="form-input">
+                        <strong>Speed:</strong><br>
+                        <input type="text" name="speed" id="speed" value="60" required><br>
+                        <br>
+                        <strong>Birthday:</strong><br>
+                        <input type="date" name="bday" id="date"><br>
+                        <input type="submit" class="btn-success"  value="Submit" onclick="coughtSpeeding(document.getElementById('speed').value, document.getElementById('date').value)">
+                    </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <h4> For any questions please <a href="https://www.google.com/"><u>click here</u></a> to get it answered. </h4>
+        <p> This page contains copyrighted content. &nbsp <i><ins> All Rights Reserved.</ins> </i></p>
+    </footer>
+    <script src="myprogram.js"></script>
+</body>
+
+</html>

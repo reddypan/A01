@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vishal Pannala</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="VishalPannala.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">About me</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="Myprogram.html">Dummy</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <article>
+        <section class="contact-header">
+            <header>
+                To contact me please visit <a href="index.html"><u>About me</u></a> tab and see right side of the
+                page.<br> Or else you can fill in all your details and say <strong>"Hello"</strong> in the text box
+                below. I will contact you whenever I am free.<br> <strong>Thanks!</strong></header>
+        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12" id="form-input">
+                    <form>
+                        <strong>First name:</strong><br>
+                        <input type="text" name="firstname" id="first" value="Vishal" required><br>
+                        <br>
+                        <strong>Last name:</strong><br>
+                        <input type="text" name="lastname" id="last" value="Reddy" required>
+                        <br>
+                        <strong>Gender: </strong><br>
+                        <input type="radio" name="gender" value="male" checked> <strong>Male</strong>
+                        <input type="radio" name="gender" value="female"> <strong>Female</strong>
+                        <input type="radio" name="gender" value="other"> <strong>Other</strong><br><br>
+                        <strong>E-mail:</strong><br>
+                        <input type="email" name="email" id="email" value="@gmail.com"><br><br>
+                        <strong>Phone:</strong><br>
+                        <input type="text" name="phone" id="phone" value="+1" required><br><br>
+                        <strong>Comments:</strong><br>
+                        <textarea style="height:100px; width:175px" id="comments">Hello!</textarea><br><br>
+                        <input type="submit" class="btn-success" value="Submit">
+                        <input type="reset" class="btn-info">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <h4> For any questions please <a href="https://www.google.com/"><u>click here</u></a> to get it answered. </h4>
+        <p> This page contains copyrighted content. &nbsp <i><ins> All Rights Reserved.</ins> </i></p>
+    </footer>
+</body>
+
+</html>

@@ -1,39 +1,39 @@
-
+body {
+    background-image: url("photo-1478428036186-d435e23988ea.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
 
 #past-section {
     background-color: #66FCF1;
-    float: left;
-    width: 650px;
     border-style: ridge;
 }
 
 #future-section {
     background-color: #EAE7DC;
-    float: left;
-    width: 650px;
     border-style: ridge;
 }
 
 .aside-header {
-    width: 295px;
     background-color: #EAE7DC;
-    float: right;
-    height: 510px;
     border-style: ridge;
+    height: 372px;
 }
 
 header {
-    background-color: #1f2833;
+
     text-align: center;
-    height: 60px;
-    padding: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
+    height: 90px;
+    padding-top: 60px;
+    font-size: 17px;
 }
 
 footer{
     clear: both;
     background-color: #0b0c10 ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border-style: ridge;
     text-align: center;
     color: white;
@@ -53,8 +53,22 @@ table, th, td {
 }
 
 .classes-schedule{
-    background-color: #66FCF1;
+    background-color: #EAE7DC;
     border-style: ridge;
-    float: left;
-    width: 650px;
+}
+
+.contact-header{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    height: 150px;
+
+    font-size: 17px;
+}
+#form-input, #form-input1{
+    color: white;
+    text-align: left;
+}
+#first, #last, #phone, #email, #comments, #date, #speed{
+    color: black;
 }
