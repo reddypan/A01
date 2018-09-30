@@ -4,76 +4,138 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Vishal Pannala</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="VishalPannala.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">About me</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="Myprogram.html">Dummy</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Vishal Pannala</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="tic-tac-toe.html">Tic-tac-toe</a>
+                <a class="nav-item nav-link" href="contact.html">Contact</a>
             </div>
         </div>
     </nav>
+
     <article>
-        <section class="contact-header">
-            <header>
-                To contact me please visit <a href="index.html"><u>About me</u></a> tab and see right side of the
-                page.<br> Or else you can fill in all your details and say <strong>"Hello"</strong> in the text box
-                below. I will contact you whenever I am free.<br> <strong>Thanks!</strong></header>
-        </section>
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12" id="form-input">
-                    <form>
-                        <strong>First name:</strong><br>
-                        <input type="text" name="firstname" id="first" value="Vishal" required><br>
-                        <br>
-                        <strong>Last name:</strong><br>
-                        <input type="text" name="lastname" id="last" value="Reddy" required>
-                        <br>
-                        <strong>Gender: </strong><br>
-                        <input type="radio" name="gender" value="male" checked> <strong>Male</strong>
-                        <input type="radio" name="gender" value="female"> <strong>Female</strong>
-                        <input type="radio" name="gender" value="other"> <strong>Other</strong><br><br>
-                        <strong>E-mail:</strong><br>
-                        <input type="email" name="email" id="email" value="@gmail.com"><br><br>
-                        <strong>Phone:</strong><br>
-                        <input type="text" name="phone" id="phone" value="+1" required><br><br>
-                        <strong>Comments:</strong><br>
-                        <textarea style="height:100px; width:175px" id="comments">Hello!</textarea><br><br>
-                        <input type="submit" class="btn-success" value="Submit">
-                        <input type="reset" class="btn-info">
-                    </form>
+            <div class="row align-items-end">
+                <div class="col-sm-10">
+                    <section class="contact-header">
+                        <header>
+                            To contact me, please visit <a href="index.html"><u class="underline">About me</u></a> tab
+                            and see right side
+                            of the
+                            page.<br> Or else you can fill in all your details and say <strong>"Hello"</strong> in the
+                            text area
+                            below. I will get in touch with you whenever I am free.<br> <strong><u>Thanks!</u></strong><img
+                                src="1200px-Breathe-face-smile.svg.png" width="17" height="17"></header><br>
+                    </section>
                 </div>
             </div>
         </div>
+        <div class="container">
+            <form class="form-input">
+                <div class="form-group row">
+                    <div class="col-sm-4">
+                        <p id="first"><strong>Firstname: </strong></p>
+                        <input type="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="col-sm-4">
+                        <p id="last"><strong>Lastname: </strong> </p>
+                        <input type="text" class="form-control" placeholder="Last name"><br>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-3 col-form-label">
+                        <p id="email"><strong>Email</strong></p>
+                    </label>
+                    <div class="col-sm-5">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="@example.com">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-3 col-form-label">
+                        <p id="email">Phone</p>
+                    </label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="phone" placeholder="+1 (XXX) XXX-XXXX">
+                    </div>
+                </div>
+                <fieldset class="form-group">
+                    <div class="row">
+                        <legend class="col-form-label col-sm-3 pt-0">
+                            <p class="gender">Gender</p>
+                        </legend>
+                        <div class="col-sm-5">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                                    checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                    <p class="gender">Male</p>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                <label class="form-check-label" for="gridRadios2">
+                                    <p class="gender">Female</p>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                                <label class="form-check-label" for="gridRadios3">
+                                    <p class="gender">Other</p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="form-group row">
+                    <div class="col-form-label col-sm-3 pt-0">
+                        <p id="comments"><strong>Comments</strong></p>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form-check">
+                            <textarea class="form-control" aria-label="With textarea" placeholder="Hello!"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-4">
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="submit" class="btn btn-success">Submit</button>
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </article>
     <footer>
-        <p> Here I am attaching my profiles link <a href="https://bitbucket.org/reddypan/"><img src="334235045829_1d1db85d6877560365df_512.png"
-                    width="30px" height="30px"></a> <a href="https://github.com/reddypan"><img src="fLFdcGsl_400x400.jpg"
-                    width="30px" height="30px"></a> <a href="https://www.linkedin.com/in/vishal-reddy-469a89158/"><img
-                    src="download.png" width="30px" height="30px"></a></p>
-        <h4> For any questions please <a href="https://www.google.com/"><u>click here</u></a> to get it answered. </h4>
-        <p> This page contains copyrighted content. &nbsp <i><ins> All Rights Reserved.</ins> </i></p>
+        <p> Here, I am attaching my profiles link <a href="https://bitbucket.org/reddypan/"><img src="334235045829_1d1db85d6877560365df_512.png"
+                    width="20" height="20" alt="bitbucket"></a> <a href="https://github.com/reddypan"><img src="fLFdcGsl_400x400.jpg"
+                    width="20" height="20" alt="github"></a> <a href="https://www.linkedin.com/in/vishal-reddy-469a89158/"><img
+                    src="download.png" width="20" height="20" alt="linkedin"></a></p>
+        <h5> For any questions please <a href="https://www.google.com/"><u>click here</u></a> to get it answered. </h5>
+        <p> This page contains copyrighted content. &nbsp; <i><ins> All Rights Reserved.</ins> </i></p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

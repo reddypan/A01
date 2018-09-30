@@ -1,7 +1,7 @@
 body {
     background-image: url("photo-1478428036186-d435e23988ea.jpg");
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 
 #past-section {
@@ -17,7 +17,7 @@ body {
 .aside-header {
     background-color: #EAE7DC;
     border-style: ridge;
-    height: 372px;
+
 }
 
 header {
@@ -25,8 +25,6 @@ header {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
-    height: 90px;
-    padding-top: 60px;
     font-size: 17px;
 }
 
@@ -61,14 +59,17 @@ table, th, td {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
-    height: 150px;
-
     font-size: 17px;
 }
 #form-input, #form-input1{
     color: white;
     text-align: left;
+    width:400px;
 }
-#first, #last, #phone, #email, #comments, #date, #speed{
-    color: black;
+#first, #last,.gender, #phone, #email, #comments, #date, #speed{
+    color:white;
+}
+
+.underline{
+    color: orange;
 }
