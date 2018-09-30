@@ -20,9 +20,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="tic-tac-toe.html">Tic-tac-toe</a>
-                <a class="nav-item nav-link" href="contact.html">Contact</a>
+                <a class="nav-item nav-link disabled" href="index.html">Home<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link disabled" href="tic-tac-toe.html">Tic-tac-toe</a>
+                <a class="nav-item nav-link active" href="contact.html">Contact</a>
             </div>
         </div>
     </nav>
@@ -30,7 +30,7 @@
     <article>
         <div class="container">
             <div class="row align-items-end">
-                <div class="col-sm-10">
+                <div class="col-sm-8">
                     <section class="contact-header">
                         <header>
                             To contact me, please visit <a href="index.html"><u class="underline">About me</u></a> tab
@@ -49,34 +49,34 @@
                 <div class="form-group row">
                     <div class="col-sm-4">
                         <p id="first"><strong>Firstname: </strong></p>
-                        <input type="text" class="form-control" placeholder="First name">
+                        <input type="text" class="form-control" placeholder="First name" required>
                     </div>
                     <div class="col-sm-4">
                         <p id="last"><strong>Lastname: </strong> </p>
-                        <input type="text" class="form-control" placeholder="Last name"><br>
+                        <input type="text" class="form-control" placeholder="Last name" required><br>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="inputEmail3" class="col-sm-3 col-form-label">
-                        <p id="email"><strong>Email</strong></p>
+                        <p id="email"><strong>Email: </strong></p>
                     </label>
                     <div class="col-sm-5">
-                        <input type="email" class="form-control" id="inputEmail3" placeholder="@example.com">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="@example.com" required>
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-3 col-form-label">
-                        <p id="email">Phone</p>
+                        <p id="email"><strong>Phone: </strong></p>
                     </label>
                     <div class="col-sm-5">
-                        <input type="text" class="form-control" id="phone" placeholder="+1 (XXX) XXX-XXXX">
+                        <input type="text" class="form-control" id="phone" placeholder="+1 (XXX) XXX-XXXX" required>
                     </div>
                 </div>
                 <fieldset class="form-group">
                     <div class="row">
                         <legend class="col-form-label col-sm-3 pt-0">
-                            <p class="gender">Gender</p>
+                            <p class="gender"><strong>Gender: </strong></p>
                         </legend>
                         <div class="col-sm-5">
                             <div class="form-check">
@@ -103,7 +103,7 @@
                 </fieldset>
                 <div class="form-group row">
                     <div class="col-form-label col-sm-3 pt-0">
-                        <p id="comments"><strong>Comments</strong></p>
+                        <p id="comments"><strong>Comments: </strong></p>
                     </div>
                     <div class="col-sm-5">
                         <div class="form-check">
@@ -115,7 +115,7 @@
                     <div class="col-sm-4">
                     </div>
                     <div class="col-sm-4">
-                        <button type="submit" class="btn btn-success">Submit</button>
+                        <button type="submit" class="btn btn-success" onclick="alert('prmapdrsfs')">Submit</button>
                         <button type="reset" class="btn btn-secondary">Reset</button>
                     </div>
                 </div>
@@ -127,7 +127,7 @@
                     width="20" height="20" alt="bitbucket"></a> <a href="https://github.com/reddypan"><img src="fLFdcGsl_400x400.jpg"
                     width="20" height="20" alt="github"></a> <a href="https://www.linkedin.com/in/vishal-reddy-469a89158/"><img
                     src="download.png" width="20" height="20" alt="linkedin"></a></p>
-        <h5> For any questions please <a href="https://www.google.com/"><u>click here</u></a> to get it answered. </h5>
+        <h5> For any questions, please <a href="https://www.google.com/"><u>click here</u></a> to get it answered. </h5>
         <p> This page contains copyrighted content. &nbsp; <i><ins> All Rights Reserved.</ins> </i></p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

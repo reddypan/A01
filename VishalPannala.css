@@ -61,12 +61,8 @@ table, th, td {
     color: white;
     font-size: 17px;
 }
-#form-input, #form-input1{
-    color: white;
-    text-align: left;
-    width:400px;
-}
-#first, #last,.gender, #phone, #email, #comments, #date, #speed{
+
+#first, #last,.gender, #email, #comments, #date, #speed{
     color:white;
 }
 
