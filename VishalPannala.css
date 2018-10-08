@@ -1,6 +1,6 @@
 body {
     background-image: url("photo-1478428036186-d435e23988ea.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: repeat;
 }
 
@@ -68,4 +68,19 @@ table, th, td {
 
 .underline{
     color: orange;
+}
+
+#textfor{
+    text-align: center;
+    color:white;
+    background-color: green;
+    display: block;
+}
+
+#form-input1{
+    color:white;
+}
+
+#speed, #date{
+    color: black;
 }

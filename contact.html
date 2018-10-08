@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Vishal Pannala</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" href="VishalPannala.css">
@@ -20,9 +20,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link disabled" href="index.html">Home<span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link disabled" href="tic-tac-toe.html">Tic-tac-toe</a>
-                <a class="nav-item nav-link active" href="contact.html">Contact</a>
+                <a class="nav-item nav-link	disabled" href="index.html"><strong>Home</strong><span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" href="contact.html"><strong>Contact</strong></a>
+                <a class="nav-item nav-link disabled" href="tictac.html"><strong>Tic-tac-toe</strong></a>
+                <a class="nav-item nav-link disabled" href="Myprogram.html"><strong>Speeding Ticket</strong></a>
             </div>
         </div>
     </nav>
@@ -38,29 +39,22 @@
                             of the
                             page.<br> Or else you can fill in all your details and say <strong>"Hello"</strong> in the
                             text area
-                            below. I will get in touch with you whenever I am free.<br> <strong><u>Thanks!</u></strong><img
+                            below. I will get in touch with you whenever I am free. Meanwhile, you can visit my profile links below.<br> <strong><u>Thanks!</u></strong><img
                                 src="1200px-Breathe-face-smile.svg.png" width="17" height="17"></header><br>
                     </section>
                 </div>
             </div>
         </div>
         <div class="container">
-            <div class="rows">
-                <div class="col-xs-8">
-                        <p id="textfor">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <form class="form-input">
+            <form class="form-input" onsubmit="email()">
                 <div class="form-group row">
                     <div class="col-sm-4">
                         <p id="first"><strong>Firstname: </strong></p>
-                        <input type="text" class="form-control" placeholder="First name" required>
+                        <input type="text" class="form-control" onkeypress="return onlyAlphabets(event,this);" placeholder="First name" required>
                     </div>
                     <div class="col-sm-4">
                         <p id="last"><strong>Lastname: </strong> </p>
-                        <input type="text" class="form-control" placeholder="Last name" required><br>
+                        <input type="text" class="form-control" onkeypress="return onlyAlphabets(event,this);" placeholder="Last name" required><br>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -71,13 +65,19 @@
                         <input type="email" class="form-control" id="inputEmail3" placeholder="@example.com" required>
                     </div>
                 </div>
-
                 <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-3 col-form-label">
                         <p id="email"><strong>Phone: </strong></p>
                     </label>
                     <div class="col-sm-5">
-                        <input type="text" class="form-control" id="phone" placeholder="+1 (XXX) XXX-XXXX" required>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">+1</span>
+                            </div>
+                            <input type="text" class="form-control" onkeypress="return onlyNumbers(event,this);"
+                            placeholder="(XXX)XXX-XXXX" id="phone" aria-label="Username"
+                                maxlength="10" minlength="10" aria-describedby="basic-addon1">
+                        </div>
                     </div>
                 </div>
                 <fieldset class="form-group">
@@ -122,7 +122,7 @@
                     <div class="col-sm-4">
                     </div>
                     <div class="col-sm-4">
-                        <button type="submit" class="btn btn-success" onclick="email()">Submit</button>
+                        <button type="submit" class="btn btn-success">Submit</button>
                         <button type="reset" class="btn btn-secondary">Reset</button>
                     </div>
                 </div>
@@ -143,7 +143,7 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-    <script src="contact.js"></script>
+    <script src="contact.js" defer></script>
 </body>
 
 </html>

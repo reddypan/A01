@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Vishal Pannala</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
+        crossorigin="anonymous">
     <link rel="stylesheet" href="VishalPannala.css">
 </head>
 
@@ -20,30 +20,31 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="Myprogram.html">Tic-tac-toe</a>
-                <a class="nav-item nav-link" href="contact.html">Contact</a>
+                <a class="nav-item nav-link	disabled" href="index.html"><strong>Home</strong><span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link disabled" href="contact.html"><strong>Contact</strong></a>
+                <a class="nav-item nav-link disabled" href="tictac.html"><strong>Tic-tac-toe</strong></a>
+                <a class="nav-item nav-link active" href="Myprogram.html"><strong>Speeding Ticket</strong></a>
             </div>
         </div>
     </nav>
 
     <article>
-        <header> Speeding Ticket - Fine in USD</header>
+        <header> <u>Speeding Ticket - Fine in USD</u></header>
         <div class="container">
             <div class="row">
-                <div class="col-xs-8">
+                <div class="col-sm-6">
                     <section id="form-input1">
-                        <p>If you want to drive a little too fast, and if a police officer stops you, Don't worry.
-                            If speed is 60 or less, the fine will be $100. If speed is between 61 and 80 inclusive, the
-                            fine will be $150. If speed is 81 or more, the fine will be $200. Unless it is your
-                            birthday -- on that day, your speed can go at any any speed.</p>
-                        <form id="form-input">
+                        <p>What if you want to drive a little too fast, and if a police officer stops you? Don't worry.
+                            If your are driving at a speed of 60 or less, the fine will be $100. If speed is between 61 and 80 inclusive, the
+                            fine will be $150. If speed is 81 or more, the fine will be $200 unless it is your
+                            birthday -- on that day, you can drive at any speed. Please enter birthday only when you want to drive on that day.</p>
+                        <form id="form-input" onsubmit="caughtSpeeding(document.getElementById('speed').value, document.getElementById('date').value)">
                             <strong>Speed:</strong><br>
                             <input type="text" name="speed" id="speed" value="60" required><br>
                             <br>
                             <strong>Birthday:</strong><br>
-                            <input type="date" name="bday" id="date"><br>
-                            <input type="submit" class="btn-success" value="Submit" onclick="coughtSpeeding(document.getElementById('speed').value, document.getElementById('date').value)">
+                            <input type="date" name="bday" id="date"><br><br>
+                            <input type="submit" class="btn-success" value="Submit">
                         </form>
                     </section>
                 </div>
@@ -51,7 +52,7 @@
         </div>
     </article>
     <footer>
-        <p> Here I am attaching my profiles link <a href="https://bitbucket.org/reddypan/"><img src="334235045829_1d1db85d6877560365df_512.png"
+         <p> Here I am attaching my profiles link <a href="https://bitbucket.org/reddypan/"><img src="334235045829_1d1db85d6877560365df_512.png"
                     width="30" height="30" alt="bitbucket"></a> <a href="https://github.com/reddypan"><img src="fLFdcGsl_400x400.jpg"
                     width="30" height="30" alt="github"></a> <a href="https://www.linkedin.com/in/vishal-reddy-469a89158/"><img
                     src="download.png" width="30" height="30" alt="linkedin"></a></p>
@@ -60,11 +61,11 @@
     </footer>
     <script src="myprogram.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
